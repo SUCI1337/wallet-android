@@ -57,7 +57,7 @@ jobs:
       if: ${{ always() }} # IMPORTANT: Execute report job regardless of status.
       steps:
       - name: Download Unit Test Reports
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v4.1.7
         with:
           name: unit_test_reports
       - name: Display Test Reports
